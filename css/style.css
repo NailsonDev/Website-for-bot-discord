@@ -1,0 +1,275 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html,body{
+     height: 100%;
+ }
+
+ body{
+     background-image: url("../img/background.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: fixed;
+     background-color: rgb(240, 122, 234);
+ }
+
+ .container{
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+/* MENU DO SITE */
+
+ .desktop-menu li{
+     float: left;
+     list-style-type: none;
+     margin-top: 25px;
+     margin-left: 5px;
+
+ }
+
+ .desktop-menu ul li a{
+     color: white;
+     text-decoration: none; 
+     padding: 12px;
+     font-family: 'Heebo', sans-serif;
+     transition: 0.3s;
+ }
+
+ .desktop-menu a:hover{
+     background-color: rgba(255, 255, 255, 0.233);
+     border-radius: 5px;
+ }
+
+ .dash{
+     position: absolute;
+     top: 30px;
+     left: 80%;
+ }
+
+ .dash a{
+    color: white;
+    padding: 12px;
+    font-family: 'Heebo', sans-serif;
+    transition: 0.3s;
+ }
+ /* 0000000-000000 */
+
+ /* CONTEÚDO DO SITE */
+
+ .logo {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    animation-name: logo-nime;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+   
+ }
+
+ @keyframes logo-nime{
+
+    25% {margin-top: 30px;}
+    37.5% {margin-top: -15px;}
+    50% {margin-top: 15px;}
+    62.5% {margin-top: -5px;}
+    75% {margin-top: 5px;}
+ }
+
+ .logo img{
+     border-radius: 100%;
+     animation: mover 1.5s infinite alternate;
+
+ }
+
+ .introdution{
+    margin-left: 55%;
+    margin-top: 15%;
+ }
+
+ .introdution h1{
+     font-size: 70px;
+     margin-left: 40px;
+     color: white;
+     font-family: 'Noto Sans JP', sans-serif;
+
+ }
+
+ .introdution p{
+     margin-top: 20px;
+     text-align: center;
+     color: rgba(250, 220, 220, 0.719);
+     font-family: 'Noto Sans JP', sans-serif;
+
+ }
+
+ .button {
+    margin-left: 66%;
+
+ }
+
+ .button form{
+     margin-top: 40px;
+     
+ }
+
+ .button form input[type="submit"]{
+     padding-left: 90px;
+     padding-right: 90px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     font-size: 17px;
+     border-radius: 5px;
+     background-color: rgb(245, 129, 197);
+     border: 0;
+     border-bottom: 2px solid rgb(228, 25, 177);
+     color: white;
+     cursor: pointer;
+ }
+ /* 000000-0000000 */
+
+ /* RESPONSIVO */
+
+ @media screen and (max-width: 1157px){
+
+     .introdution{
+         position: absolute;
+         margin-top: 40%;
+         left: -28%;
+              
+     }
+
+     .introdution h1{ 
+         margin-left: 10%;
+     }
+
+     .introdution p{
+        margin-right: 30%;
+     }
+
+     .logo{
+         top: 70px;
+     }
+
+     .button{
+         margin-top: 17%;
+         position: absolute;
+     }
+
+    
+ }
+ 
+ @media screen and (max-width: 1024px) {
+
+    .introdution{
+
+    margin-top: 48%;
+    left: -28%;
+    }
+}
+
+@media screen and (max-width: 878px){
+
+    .button{
+        left: 5%;
+    }
+
+    .introdution{
+        margin-top: 54%;
+    }
+
+}
+
+@media screen and (max-width: 798px) {
+    .logo img{
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 40%;
+    }
+
+    .button{
+        margin-top: 50%;
+        left: -25%;
+    }
+
+    .introdution h1{
+        font-size: 20px;
+        margin-left: 23%;
+    }
+    .introdution p{
+        font-size: 13px;
+    }
+    .introdution{
+        margin-top: 66%; 
+        margin-left: 63%;  
+    }
+}
+
+@media screen and (max-width: 629px ){
+    .logo{
+        left: 8%;
+    }
+    .button{
+        margin-top: 70%;
+        left: -32%;
+    }
+    .introdution{
+       left: -30%;
+        margin-top: 90%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .logo{
+        left: -5%;
+    }
+    .button{
+        left: -40%;
+    }
+    .introdution{
+        margin-top: 100%;
+    }
+    .introdution h1{
+        margin-left: 6%;
+    }
+    .introdution p{
+   
+        margin-left: -16%;
+    }
+
+    .dash{
+       display: none;
+    }
+    .desktop-menu{
+        margin-left: 7%;
+    }
+}
+
+@media screen and (max-width: 544px){
+    .dash{
+        display: none;
+    }
+
+    .desktop-menu{
+        margin-left: 8%;
+    }
+    .logo{
+        left: -5%;
+    }
+    .button{
+        left: -40%;
+    }
+    .introdution{
+        margin-top: 100%;
+    }
+    .introdution h1{
+        margin-left: 6%;
+    }
+    .introdution p{
+   
+        margin-left: -16%;
+    }
+}
